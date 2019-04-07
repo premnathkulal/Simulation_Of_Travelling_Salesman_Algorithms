@@ -1,13 +1,10 @@
-// gcc -o dijkstra  dijkstra.c  -lGL -lglut -lGLU  -lm -std=c99
+// gcc  tsp.c  -lGL -lglut -lGLU  -lm -std=c99
 
 #include<GL/glut.h>
 #include<stdio.h>
 #include<math.h>
 #include<string.h>
 #include<time.h>
-
-//prototype of dijkstra
-void dijkstra();
 
 //Window Size
 GLsizei wh = 5000, ww = 5000;
@@ -39,7 +36,6 @@ int sourceNodeCreated = 0;
 //Destination node created
 int destinationNodeCreated = 0;
 
-//Dijkstra begin
 int dijkstraRun = 0;
 
 //instruction display
